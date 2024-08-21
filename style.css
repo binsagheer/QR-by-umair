@@ -1,0 +1,250 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to right top, #4a2138, #482541, #44294a, #3e2e52, #363359, #29375b, #1b3a5b, #0a3c59, #003c51, #023c48, #0f3b3f, #1a3937);
+    padding: 20px;
+}
+.camera-dropdown-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 360px; /* Adjust as needed */
+    margin: 0 auto; /* Center the dropdown */
+}
+
+.camera-dropdown {
+    width:360px!important; /* Full width */
+    padding: 10px 22px !important;
+    color: #fff !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    background-color: #ff7300 !important;
+    background-image: linear-gradient(to right, #ffa600, #ff7300, #ffa600) !important;
+    border: none !important;
+    border-radius: 1rem !important;
+    box-shadow: 0 0 20px rgba(255, 166, 0, 0.5), 0 0 30px rgba(255, 115, 0, 0.5);
+    cursor: pointer !important;
+    appearance: none;display: block !important;;margin: auto !important;
+    background-position: right 15px center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-image: linear-gradient(to right, #ffa600, #ff7300, #ffa600), 
+                      url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23fff" viewBox="0 0 24 24"%3E%3Cpath d="M7 10l5 5 5-5z"/%3E%3C/svg%3E');
+}
+
+.camera-dropdown:hover,
+.camera-dropdown:focus {
+    background-color: #ff8a00 !important;
+    box-shadow: 0 0 40px rgba(255, 166, 0, 0.8), 0 0 60px rgba(255, 115, 0, 0.8) !important;
+    outline: none;
+}
+
+/* Ensuring options are responsive */
+.camera-dropdown option {
+    background-color: #ff7300;
+    color: #fff;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 1rem !important;
+    margin: 5px 0;
+    width: 100%; /* Full width */
+}
+
+/* Adjusting options for responsive view */
+.camera-dropdown option:hover {
+    background-color: #ff8a00;
+    color: #fff;
+}
+
+
+
+.qr-reader-container{height: 80px;}
+
+
+/* @media (max-width:630px ) {
+    .qr-canvas-visible{
+    width: 100% !important;
+}.qr-reader{width: 100% !important;margin: 0 auto !important;}
+#qr-canvas-visible{min-height: 250px !important;}
+#qr-shaded-region{border-width: 100% !important;}
+    
+} */
+
+#reader > video{width: 100% !important;} 
+#qr-shaded-region{border-width: 2px !important;
+
+    margin-inline: 48px !important;
+    margin-top: 22px;;max-height: 60% !important;
+}   .qr-canvas-visible{
+width: 100% !important;}
+@media (min-width:650px) {
+#qr-shaded-region {
+border-width: 2px !important;
+margin-inline: 90px !important;
+margin-top: 61px;
+max-height: 80% !important;
+}
+
+}
+@media (max-width:650px) {
+#qr-shaded-region {
+border-width: 2px !important;
+margin-inline: 115px !important;
+margin-top: 40px;
+max-height: 60% !important;
+
+}}
+
+@media (max-width:425px) {
+
+#qr-shaded-region {
+border-width: 2px !important;
+margin-inline: 59px !important;
+margin-top: 49px;
+max-height: 48% !important;
+}
+.camera-dropdown{width: 100% !important;}
+#cameraDropdown > option{width:320px!important;}
+
+}
+#qr-canvas-visible{width: 100% !important;object-fit: cover !important;display: block !important;}
+#cameraDropdown > option{width:100%!important;}
+
+@media (min-width:380px) {
+#qr-canvas-visible{display: block !important;}
+
+
+
+} 
+
+@media (min-width:51px) {
+
+
+}
+
+
+
+
+.container {
+  
+    padding: 20px;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(255, 166, 0, 0.5), 0 0 30px rgba(255, 115, 0, 0.8) !important;
+    max-width: 600px;
+    width: 100%;
+    background-image: linear-gradient(to right top, #4a2138, #482541, #44294a, #3e2e52, #363359, #29375b, #1b3a5b, #0a3c59, #003c51, #023c48, #0f3b3f, #1a3937);
+    .container {
+background: rgba(255, 255, 255, 0.2); 
+border-radius: 1rem; 
+backdrop-filter: blur(5px); 
+-webkit-backdrop-filter: blur(10px); 
+
+border: 1px solid rgba(255, 255, 255, 0.3); 
+
+}
+
+}
+.container:hover{ box-shadow: 0 0 40px rgba(255, 166, 0, 0.8), 0 0 60px rgba(255, 115, 0, 0.8) !important;}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 0 0 40px rgba(255, 166, 0, 0.8), 0 0 60px rgba(255, 115, 0, 0.8) !important;
+}
+
+.qr-reader {
+    width: 100%;
+    max-height: 400px;
+    margin-bottom: 20px;
+    aspect-ratio: 1 / 1; /* Ensures the video remains square and responsive */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+button {
+    text-align: center !important;
+    padding: 10px 22px !important;
+    color: #fff !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    background-image: linear-gradient(to right, #ffa600, #ff7300, #ffa600) !important;
+    background-size: 300% 100% !important;
+    border: none !important;
+    border-radius: 1rem !important;
+    transition: background-position .4s ease-in-out, transform .2s !important;
+    cursor: pointer !important;
+    width: 100%;
+    max-width: 360px !important;
+    margin: 10px 0 !important;
+    box-shadow: 0 0 20px rgba(255, 166, 0, 0.5), 0 0 30px rgba(255, 115, 0, 0.5);
+}
+
+button:hover {
+    box-shadow: 0 0 40px rgba(255, 166, 0, 0.8), 0 0 60px rgba(255, 115, 0, 0.8) !important;
+}
+
+.result {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+    text-shadow:0 0 40px rgba(255, 166, 0, 0.8), 0 0 60px rgba(255, 115, 0, 0.8) !important;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.upload-label {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 22px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    background-image: linear-gradient(to right, #ffa600, #ff7300, #ffa600);
+    background-size: 300% 100%;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-position .4s ease-in-out, transform .2s;
+    width: 100%;
+    max-width: 360px;
+    margin: 10px 0;
+    box-shadow: 0 0 20px rgba(255, 166, 0, 0.5), 0 0 30px rgba(255, 115, 0, 0.5);
+}
+
+.upload-label:hover {
+    box-shadow: 0 0 40px rgba(255, 166, 0, 0.8), 0 0 60px rgba(255, 115, 0, 0.8);
+}
+
+@media (max-width: 600px) {
+    .qr-reader {
+        
+        width: 100% !important;
+    }
+}
+
+
+
+/*  */
+
